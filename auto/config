@@ -26,6 +26,7 @@ lb config noauto \
     --iso-publisher "ProjectName; https://projectname.org/projectname; contact@projectname.org" \
     --memtest "none" \
     --win32-loader "false" \
+    --loadlin "false" \
     --clean \
     --debug \
     --verbose \

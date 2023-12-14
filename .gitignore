@@ -1,6 +1,11 @@
-/cache
-/chroot
-/build.log
-/.build
-/.lock
-/chroot.*
+cache/
+chroot/
+build.log
+.build
+.lock
+chroot
+binary
+tftpboot
+live*
+chroot.*
+config
