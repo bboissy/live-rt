@@ -1,3 +1,5 @@
 /cache
-/chroot.
+/chroot
 /build.log
+/.build
+/.lock
