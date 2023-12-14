@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+
+lb config noauto \
+    --mode "debian" \
+    --system "live" \
+    --distribution "buster" \
+    --architecture "amd64" \
+    --archive-areas "main contrib non-free" \
+    --security "true" \
+    --updates "true" \
+    --backports "false" \
+    --binary-images netboot \
+    --bootloaders "syslinux grub-efi" \
+    --apt-indices "true" \
+    --apt-recommends "true" \
+    --apt-secure "true" \
+    --apt-source-archives "false" \
+    --linux-package "linux-image linux-headers" \
+    --debian-installer "live" \
+    --debian-installer-distribution "bullseye" \
+    --debian-installer-gui "true" \
+    --firmware-binary "true" \
+    --firmware-chroot "true" \
+    --iso-publisher "ProjectName; https://projectname.org/projectname; contact@projectname.org" \
+    --memtest "none" \
+    --win32-loader "false" \
+    --clean \
+    --debug \
+    --verbose \
+    --source "false" \
+    "${@}"
