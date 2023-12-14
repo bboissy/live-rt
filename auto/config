@@ -7,12 +7,14 @@ lb config noauto \
     --system "live" \
     --distribution "buster" \
     --architecture "amd64" \
+    --image-name "debianrtxxx-live" \
     --archive-areas "main contrib non-free" \
+    --debootstrap-options "--variant=minbase" \
     --security "true" \
     --updates "true" \
     --backports "false" \
-    --binary-images netboot \
-    --bootloaders "syslinux grub-efi" \
+    --binary-images "netboot" \
+    --bootloaders "syslinux" \
     --apt-indices "true" \
     --apt-recommends "true" \
     --apt-secure "true" \
